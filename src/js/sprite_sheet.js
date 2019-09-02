@@ -1,8 +1,12 @@
 /** Class to handle sprite sheets. */
 class SpriteSheet {
-  /** @param {string} image Sprite sheet location. */
-  constructor(image) {
+  /**
+   * @param {string} image Sprite sheet location.
+   * @param {number} spriteSize Source sprite size(x = y).
+   */
+  constructor(image, spriteSize) {
     this.image = image;
+    this.spriteSize = spriteSize;
     this.sprites = [];
   }
 
