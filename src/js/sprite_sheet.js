@@ -31,6 +31,27 @@ class SpriteSheet {
   }
 
   /**
+   * Add Sprites in bulk.
+   * @param {string[]} names
+   * @param {number} rows
+   * @param {number} columns
+   */
+  addSpriteBulk(names, rows, columns) {
+    if (rows * columns === names.length) {
+      let index = 0;
+      for (let i = 0; i < rows; i++) {
+        for (let j = 0; j < columns; j++) {
+          this.addSprite({
+            name: names[index++],
+            x: j * this.spriteSize,
+            y: i * this.spriteSize,
+          });
+        }
+      }
+    }
+  }
+
+  /**
    * Get the position for sprite.
    * @param {string} name Sprite name.
    * @return {sprite|undefined}
