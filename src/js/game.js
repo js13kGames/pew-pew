@@ -31,7 +31,7 @@ class Game {
       rows: 4,
       columns: 2,
     };
-    const spriteNames = [
+    const SPRITE_NAMES = [
       'idle1',
       'idle2',
       'pop1',
@@ -53,7 +53,7 @@ class Game {
       pew: 88,
       absorb: 90,
     };
-    const PLAYER = new Player(P_SS, spriteNames, this.ctx, CANVAS_SIZE, KEYS);
+    const PLAYER = new Player(P_SS, SPRITE_NAMES, this.ctx, CANVAS_SIZE, KEYS);
     PLAYER.init();
   }
 }
