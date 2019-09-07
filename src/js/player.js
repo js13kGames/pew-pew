@@ -90,7 +90,7 @@ class Player {
     this.frameCounter++;
     this.ctx.clearRect(0, 0, this.canvasSize.width, this.canvasSize.height);
     /* Paint BG */
-    this.ctx.fillStyle = '#daf3ec';
+    this.ctx.fillStyle = '#260016';
     this.ctx.fillRect(0, 0, this.canvasSize.width, this.canvasSize.height);
     /* Change player position */
     const MOVE = 4;
