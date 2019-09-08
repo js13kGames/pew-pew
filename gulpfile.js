@@ -13,8 +13,8 @@ const checkSize = require('gulp-check-filesize');
 const imageMin = require('gulp-imagemin');
 
 const jsConcat = [
-  'src/js/spriteSheet.js',
-  'src/js/player.js',
+  'src/js/player/spriteSheet.js',
+  'src/js/player/player.js',
   'src/js/game.js',
   'src/js/main.js',
 ];
